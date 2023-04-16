@@ -14,3 +14,7 @@ must first establish a class "class AddSnackForm(FlaskForm)"
     
     name = StringField("Snack Name")
     price = FloatField("Price in USD")
+
+BoolField exists
+
+  import BooleanField
