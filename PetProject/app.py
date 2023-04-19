@@ -1,6 +1,6 @@
 """Flask app for adopt app."""
 
-from flask import Flask, url_for, render_template, redirect, flash, jsonify
+from flask import Flask, url_for, render_template, redirect, flash, jsonify, request
 
 from flask_debugtoolbar import DebugToolbarExtension
 
@@ -26,16 +26,6 @@ toolbar = DebugToolbarExtension(app)
 
 
 
-# create Pet model
-class Pet(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100))
-    species = db.Column(db.String(100))
-    age = db.Column(db.Integer)
-
-    def __repr__(self):
-        return f"{self.name} ({self.species}), {self.age}"
-
 # home route
 @app.route('/')
 def home():
@@ -54,9 +44,9 @@ def add_pet():
         db.session.add(pet)
         db.session.commit()
 
-        return redirect(url_for('home'))
+        return redirect(url_for('index'))
 
-    return render_template('add_pet.html')
+    return render_template('add_pet.html', form=form)
 
 # run Flask app
 if __name__ == '__main__':
