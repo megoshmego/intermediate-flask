@@ -1,25 +1,63 @@
-from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
+"""Flask app for adopt app."""
+
+from flask import Flask, url_for, render_template, redirect, flash, jsonify
+
+from flask_debugtoolbar import DebugToolbarExtension
+
+from models import db, connect_db, Pet
+from forms import AddPetForm
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///pets.db'
-app.config['SECRET_KEY'] = 'secret_key'
-db = SQLAlchemy(app)
+
+app.config['SECRET_KEY'] = "secrets"
+
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql:///"
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+connect_db(app)
+db.create_all()
+
+# Having the Debug Toolbar show redirects explicitly is often useful;
+# however, if you want to turn it off, you can uncomment this line:
+#
+# app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = False
+
+toolbar = DebugToolbarExtension(app)
 
 
 
+# create Pet model
+class Pet(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100))
+    species = db.Column(db.String(100))
+    age = db.Column(db.Integer)
+
+    def __repr__(self):
+        return f"{self.name} ({self.species}), {self.age}"
+
+# home route
 @app.route('/')
-def index():
+def home():
     pets = Pet.query.all()
     return render_template('index.html', pets=pets)
 
+# create add pet route
 @app.route('/add_pet', methods=['GET', 'POST'])
 def add_pet():
-    form = PetForm()
-    if form.validate_on_submit():
-        pet = Pet(name=form.name.data, species=form.species.data, age=form.age.data, image_url=form.image_url.data, description=form.description.data)
+    if request.method == 'POST':
+        pet_name = request.form['name']
+        pet_species = request.form['species']
+        pet_age = request.form['age']
+
+        pet = Pet(name=pet_name, species=pet_species, age=pet_age)
         db.session.add(pet)
         db.session.commit()
-        flash('Pet added successfully!', 'success')
-        return redirect(url_for('index'))
-    return render_template('add_pet.html', form=form)
+
+        return redirect(url_for('home'))
+
+    return render_template('add_pet.html')
+
+# run Flask app
+if __name__ == '__main__':
+    app.run()
