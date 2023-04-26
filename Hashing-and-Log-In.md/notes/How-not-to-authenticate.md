@@ -1,4 +1,4 @@
-ript
+Would you please evaluate the transcript I provide for it's key terms, ideas, concepts and their defintions. Would you also please include the video title "How-not-to-Authenticate", the subsection title "Hashing and Loggin In", and the section title "Intermediate Flask"?
 
 
 0:00
