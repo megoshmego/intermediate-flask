@@ -1,3 +1,5 @@
+Would you please evaluate the transcript I provide for it's key terms, ideas, concepts and their defintions. Would you also please include the video title "Registering and Authenticating", the subsection title "Hashing and Loggin In", and the section title "Intermediate Flask"?
+
 0:03
 all righty so now that we've seen the
 0:06
