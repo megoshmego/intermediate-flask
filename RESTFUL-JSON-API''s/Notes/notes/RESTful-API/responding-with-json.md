@@ -10,7 +10,7 @@ Serialization: The process of converting a complex object (e.g., an instance of 
 
 Custom serialization method: The instructor demonstrates how to create a custom method (e.g., to_dictionary, to_dict, serialize, etc.) for a specific model to convert an object into a Python dictionary that can easily be turned into JSON using the JSONify method.
 
-Example:
+Example::
 
 python
 Copy code
