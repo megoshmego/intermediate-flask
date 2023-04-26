@@ -2,7 +2,7 @@ Title: Using our API with JS
 Section: Intermediate Python
 Subsection: Restful JSON API's
 
-Key terms and concepts:
+Key terms and concepts::
 
 JSON API: A JSON API is an application programming interface that uses JSON (JavaScript Object Notation) for exchanging data between a server and a client.
 Flask app: Flask is a micro web framework for Python that allows you to build web applications easily.
