@@ -1,3 +1,7 @@
+I am in a software engineering bootcamp studying to go into the AI field. I am making notes and flash cards.  I would like for you to evaluate the transcript I provide for it's key terms, ideas, concepts and their defintions. Would you also please include the video title "Authorization Demo 5", the subsection title "Hashing and Loggin In", and the section title "Intermediate Flask"? 
+
+
+
 0:00
 (bright upbeat music)
 0:04
