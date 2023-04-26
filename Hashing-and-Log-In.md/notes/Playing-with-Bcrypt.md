@@ -1,4 +1,4 @@
-Would you please evaluate the transcript I provide for it's key terms, ideas, concepts and their defintions. Would you also please include the video title "Flask-Bcrypt", the subsection title "Hashing and Loggin In", and the section title "Intermediate Flask"?
+Would you please evaluate the transcript I provide for it's key terms, ideas, concepts and their defintions. Would you also please include the video title "Playing with Bcrypt", the subsection title "Hashing and Loggin In", and the section title "Intermediate Flask"?
 
 
 
