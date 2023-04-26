@@ -1,7 +1,7 @@
 Title: RESTful ToDo's API part I
 Course: Intermediate Python
 Subsection: Restful JSON API's
-
+-------
 Key Concepts:
 
 Creating a RESTful JSON API for a ToDo app.
