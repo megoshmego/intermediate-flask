@@ -2,7 +2,7 @@ Title: How to not Authenticate
 Course: Intermediate Python
 Section: Hashing and Log In
 
-Key Terms and Concepts:
+Key Terms and Concepts::
 
 Authentication: The process of verifying the identity of a user.
 Hashing: The process of converting data into a fixed-size string, which represents the original data. Hashing is used to ensure the integrity and security of data, especially in the context of passwords.
