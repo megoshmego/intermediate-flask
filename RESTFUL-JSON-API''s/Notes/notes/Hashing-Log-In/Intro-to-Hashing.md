@@ -11,7 +11,7 @@ Cryptographic Hash function: A special subset of hash functions used in cryptogr
 One-way function: A function where, given the output, it is computationally infeasible to determine the input.
 In the video, the speaker explains the concept of hashing and its importance in storing passwords securely. They emphasize that storing passwords in plain text is a terrible idea. Instead, they recommend using a hash function to transform the password into a fixed-size output that cannot be reverse-engineered to obtain the original password. This hashed password is then stored in the database. When a user logs in, the entered password is hashed using the same function, and the output is compared to the stored hashed password to verify if they match.
 
-Demos:
+Demos::
 
 Implementing a simple hash function to understand the concept.
 Using cryptographic hash functions for password storage and authentication.
