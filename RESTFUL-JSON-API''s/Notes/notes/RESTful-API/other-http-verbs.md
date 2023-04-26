@@ -1,6 +1,6 @@
 Title: Other HTTP Verbs Course Section: Intermediate Flask Subsection: Restful JSON APIs 
 
-Key terms and concepts covered in this video: 
+Key terms and concepts covered in this video::  
 
  The video discusses how to create a RESTful JSON API using Flask and covers the different HTTP verbs, including GET, POST, PUT, PATCH, and DELETE. The instructor also talks about the limitations of HTML forms, which only support GET and POST requests, while JavaScript and server-side languages can use all the HTTP verbs. 
 
