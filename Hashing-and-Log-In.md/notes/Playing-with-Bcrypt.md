@@ -1,4 +1,7 @@
-0:00
+Would you please evaluate the transcript I provide for it's key terms, ideas, concepts and their defintions. Would you also please include the video title "Flask-Bcrypt", the subsection title "Hashing and Loggin In", and the section title "Intermediate Flask"?
+
+
+
 (upbeat music)
 0:04
 - [Instructor] Alright, so we've established
