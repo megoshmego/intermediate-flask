@@ -1,4 +1,8 @@
-0:05
+Would you please evaluate the transcript I provide for it's key terms, ideas, concepts and their defintions. Would you also please include the video title "Hashing and logging in", the subsection title "Hashing and Loggin In", and the section title "Intermediate Flask"?
+
+
+
+
 - All right, so it's important to note
 0:06
 this built-in Python hash function
