@@ -1,6 +1,7 @@
 Title: Nested Routes
 Course: Intermediate Python
 Section: Restful JSON API's
+..
 
 In this video, the instructor covers the concept of nested routes in RESTful APIs. Nested routes are used when dealing with multiple resources that have relationships with each other. The key points from the video are:
 
