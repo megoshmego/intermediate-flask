@@ -372,4 +372,4 @@ and we'll actually see how we can hash a simple string
 8:24
 and get some results and we'll go from there.
 8:27
-(upbeat music)
+(upbeat music)!
