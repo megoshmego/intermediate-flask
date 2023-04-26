@@ -1,4 +1,4 @@
-#Title: "Safety and Idempotency" Section: "Intermediate Python" Subsection: "Restful JSON" 
+#Title: "Safety and Idempotency" Section: "Intermediate Python" Subsection: "Restful JSON""
 
 Key terms, concepts, and definitions: 
 
