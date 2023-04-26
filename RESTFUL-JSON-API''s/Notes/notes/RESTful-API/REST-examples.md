@@ -4,7 +4,7 @@ Title: REST Examples
 Course: Intermediate Python
 Subsection: Restful JSON APIs
 
-Key terms and concepts:
+Key terms and concepts::
 
 RESTful routes: REST (Representational State Transfer) is a standard for designing networked applications. It's a set of constraints applied to HTTP-based APIs that determine how resources should be created, read, updated, and deleted. RESTful routes follow a specific pattern that includes HTTP verbs (GET, POST, PUT, PATCH, DELETE) and specific URL structures.
 
