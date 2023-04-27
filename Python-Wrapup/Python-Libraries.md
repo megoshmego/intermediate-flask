@@ -1,4 +1,4 @@
-Would you please evaluate the transcript I provide for it's key terms, ideas, concepts and their defintions. Would you also please include the video title "Python Libraries" with the subsection title "Python Wrap-up", and the section title "Intermediate Flask".
+Would you please evaluate the transcript I provide for it's key terms, ideas, concepts and their defintions, as well as your own demonstrations of the code?  Would you also please include the video title "Python Libraries" with the subsection title "Python Wrap-up", and the section title "Intermediate Flask".
 
 0:00
 (upbeat music)
