@@ -1,4 +1,4 @@
-Would you please evaluate the transcript I provide for it's key terms, ideas, concepts and their defintions. Would you also please include the video title "Operator Overloading" with the subsection title "Python Wrap-up", and the section title "Intermediate Flask".
+Would you please evaluate the transcript I provide for it's key terms, ideas, concepts and their defintions, as well as your own demonstrations of the code? Would you also please include the video title "Operator Overloading" with the subsection title "Python Wrap-up", and the section title "Intermediate Flask".
 
 Transcript
 
