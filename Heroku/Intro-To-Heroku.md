@@ -1,0 +1,1 @@
+Would you please evaluate the transcript I provide for its key terms, ideas, concepts and their defintions. Would you also please include the video title “Intro to Heroku", the subsection title "Heroku", and the section title "Intermediate Flask"?
