@@ -142,4 +142,154 @@ Flash messages: Temporary, contextual messages displayed to users to give feedba
 Bootstrap alerts: A collection of pre-styled elements in the Bootstrap framework for displaying contextual feedback messages to the user
 
 
+Python: A high-level, easy-to-read, and strongly-typed programming language.
+Standard Library: Python's extensive library of built-in modules.
+Dynamic Language: A programming language that allows the creation of methods, classes, or other constructs during runtime.
+Dynamically Typed: A language that allows variables to change their type during runtime.
+Strongly Typed: A language that does not automatically coerce data types when performing operations, like adding a number to a string.
+setattr(): A built-in Python function that sets the value of a named attribute of an object.
+Definitions:
 
+Python: A popular, high-level programming language known for its readability and extensive standard library.
+Standard Library: A collection of modules that come bundled with Python, providing functionality for a wide range of tasks.
+Dynamic Language: A language that allows developers to create, modify or delete constructs like classes, methods, or functions during the execution of a program.
+Dynamically Typed: A characteristic of programming languages where variables can change their type during the execution of the program.
+Strongly Typed: A characteristic of programming languages that enforce strict rules on mixing data types during operations and do not automatically convert between types.
+setattr(): A built-in Python function that allows developers to set the value of a named attribute of an object dynamically. The syntax is: setattr(object, attribute_name, value).
+
+
+
+Flask Bcrypt: A Flask extension that provides bcrypt hashing utilities for a Flask application.
+2. Hashing: A process of converting plain text data into a fixed-size, unreadable string of characters, which is usually a unique representation of the data.
+3. Authentication: The process of verifying the identity of a user by comparing their provided credentials against stored user data.
+4. User model: A data structure representing a user in the application, with fields like ID, username, and password.
+5. Protected route: A route in a Flask application that requires user authentication to access.
+6. Redirects: Changing the user's current URL to another URL in response to certain actions or conditions.
+7. Class method: A method that's bound to a class and not an instance of the object, typically used for operations that don't require a specific instance of the class to work with.
+8. Session: A way to store user-specific data on the server-side during a user's interaction with a web application.
+9. Password hashing: A technique used to securely store user passwords in a database, making it difficult for attackers to retrieve the original password if the database is compromised.
+
+Definitions:
+
+1. Flask Bcrypt: A Flask extension that offers bcrypt hashing utilities to securely hash and check passwords in a Flask application.
+2. Hashing: A process that converts input data into a fixed-size, unreadable string of characters, typically used for securely storing passwords and verifying data integrity.
+3. Authentication: A process of verifying a user's identity by checking their provided credentials (username and password) against stored user data.
+4. User model: A data structure that represents a user in the application, containing fields such as ID, username, and hashed password.
+5. Protected route: A route in a Flask application that can only be accessed by authenticated users.
+6. Redirects: A technique used in web applications to change the user's current URL to another URL in response to specific actions or conditions.
+7. Class method: A method that is bound to the class itself, rather than an instance of the object, and typically used for operations that don't require a specific instance of the class.
+8. Session: A way to store user-specific data on the server-side during a user's interaction with a web application, allowing the application to remember the user's state across multiple requests.
+9. Password hashing: A technique used to securely store user passwords in a database by converting the plain text password into a fixed-size, unreadable string, making it difficult for attackers to retrieve the original password if the database is compromised.
+
+Bcrypt: A popular password hashing algorithm, based on the Blowfish cipher, that is considered safe, commonly used, and has implementations in many programming languages, including Python.
+
+2. Salt: A random string that is included alongside a password when hashing it to ensure that the same password input generates a different hash output each time.
+
+3. Work Factor: The number of rounds of hashing Bcrypt should use, which can be adjusted to keep up with increasing computer processing speeds. A higher work factor makes the hash slower to compute and more resistant to brute force attacks.
+
+4. Binary String: A string representation of binary data, as indicated by the prefix "b" in Python.
+
+5. Hashing: The process of converting an input, such as a password, into a fixed-size output, which is the hash. This process should be deterministic, meaning that the same input should always generate the same hash.
+
+6. Authentication: The process of verifying a user's identity by checking if the password they provide matches the stored hash in the database. This is done by hashing the provided password with the stored salt and comparing the output to the stored hash.
+
+Definitions:
+
+1. Bcrypt: A password hashing algorithm that combines the Blowfish cipher with another password algorithm called crypt. It is considered safe, popular, and has implementations in many programming languages.
+
+2. Salt: A random string used in conjunction with a password when hashing it to create a unique hash output. This prevents the use of precomputed tables, such as rainbow tables, for reversing hashes back into passwords.
+
+3. Work Factor: A parameter in the Bcrypt algorithm that specifies the number of rounds of hashing to perform. Increasing the work factor makes the hash slower to compute, making it more resistant to brute force attacks.
+
+4. Binary String: A string representation of binary data used in programming languages, such as Python. In Python, binary strings are indicated by the prefix "b".
+
+5. Hashing: The process of converting an input, such as a password, into a fixed-size output, which is the hash. This process should be deterministic, meaning that the same input should always generate the same hash.
+
+6. Authentication: The process of verifying a user's identity by checking if the password they provide matches the stored hash in the database. This is done by hashing the provided password with the stored salt and comparing the output to the stored hash.
+
+
+1. Flask Sessions: Flask sessions are used to persist information and add state on top of the HTTP protocol, which is stateless by default. They are crucial for remembering if a user is logged in or not.
+
+2. User Authentication: Users are authenticated by checking their submitted credentials against stored user data in the database. The class method `user.authenticate` is used to achieve this.
+
+3. Storing User ID in the Session: When a user logs in successfully, their user ID is stored in the session, which can then be used to determine if the user is logged in or not.
+
+4. Displaying Content Based on User Status: Based on the presence of the user ID in the session, you can show or hide content in your templates or control access to certain routes.
+
+5. Protecting Routes: You can add logic to your view functions to ensure that only logged-in users can access certain routes. If a user is not logged in, you can redirect them to a different page or show an error message.
+
+6. Logging Out: To log a user out, you simply remove their user ID from the session using `session.pop('user_id')`. This will make the user appear as not logged in, and they will lose access to protected content.
+
+7. Associating User with Models: To associate a user with a particular model (e.g., a comment or a post), you can use the user ID stored in the session. This allows you to show the correct content to users and implement features like allowing only the owner of a comment to delete it.
+
+These concepts are essential for building an effective user authentication system and controlling access to content based on a user's login status. By using Flask sessions and the techniques discussed, you can create dynamic web applications that adapt to the user's authentication state.
+
+Sure, here's a simple Flask application that demonstrates user registration, login, logout, and protected routes using Flask sessions.
+
+Built-in hash function: A function available in Python that accepts an input and generates a hash value without requiring any imports. This function is not suitable for storing passwords due to various reasons.
+
+64-bit space: The built-in hash function in Python maps the input to a 64-bit space, which means it uses 64 bits in memory to store the hash value.
+
+Consistent hash values: The built-in hash function will generate the same hash value for a given input in the same implementation of Python, but the output may differ depending on the architecture, machine, and specific build of Python.
+
+Collisions: Hash functions may generate the same hash value for different inputs. The built-in hash function in Python is relatively prone to collisions compared to other cryptographic hash functions.
+
+Fast vs. slow hash functions: A fast hash function is not suitable for password storage, as it enables attackers to brute force their way through the hash values. Cryptographic hash functions are designed to be slow to provide better security.
+
+Hash maps: A data structure that uses a hash function for implementation. Python dictionaries are an example of hash maps. Hash maps are fast for data retrieval and insertion, regardless of the number of key-value pairs.
+
+Hashable and non-hashable keys: In Python dictionaries, keys must be hashable. Mutable types, such as lists, are non-hashable, while immutable types, such as numbers, strings, and booleans, can be hashed.
+
+The built-in hash function in Python is not suitable for storing passwords due to its smaller output space (64 bits), faster computation, and higher collision probability. However, it is used in Python dictionaries, which are examples of hash maps. Dictionaries are fast and efficient for data retrieval and insertion. The keys in dictionaries must be hashable, which means they must be immutable data types.
+
+Flask: A lightweight Python web framework that allows developers to build web applications quickly and easily.
+2. Django: A more feature-rich and opinionated Python web framework that provides many built-in tools and automates certain tasks.
+3. Jinja: A templating language used in Flask for rendering HTML templates.
+4. URL_for: A function in Flask used to generate URLs for specific routes.
+5. Express: A Node.js framework similar to Flask in terms of its lightweight nature and level of abstraction.
+6. SQLAlchemy: An Object Relational Mapper (ORM) used in Flask to interact with databases.
+7. Requests and Responses: The fundamental components of web development, where a client sends a request to a server, and the server sends back a response.
+8. Templating, Routes, Authentication, Cookies, and Sessions: Core concepts in web development that are applicable across different web frameworks.
+
+1. WTForms-Alchemy:
+   - A Flask add-on that combines WTForms and SQLAlchemy.
+   - Generates forms directly based on your SQLAlchemy model.
+   - Automatically creates validators based on model constraints.
+   - Can speed up development on larger projects.
+
+2. Flask-Login:
+   - A Flask add-on that provides functionality around authentication.
+   - Includes methods like login_user and logout_user.
+   - Provides a current_user attribute.
+   - Offers decorators like login_required to protect views.
+   - Simplifies the process of setting up user authentication in a Flask application.
+
+3. Flask-Mail:
+   - A Flask add-on for sending emails.
+   - Simplifies the process of sending emails, bulk emails, and adding attachments.
+   - Can be used to send reminder emails, notifications, etc.
+
+4. Flask-Admin:
+   - A Flask add-on that quickly creates an admin interface based on existing models.
+   - Works well with SQLAlchemy.
+   - Allows admins to view, edit, delete, and create new entities.
+   - Saves time by automatically generating CRUD interfaces for models.
+
+5. Flask-Restless:
+   - A Flask add-on that creates a RESTful CRUD API based on your SQLAlchemy models.
+   - Automatically generates API endpoints for your models.
+   - Makes it easy to create a RESTful API without writing all the necessary code.
+
+
+
+- Flask: a web application framework for Python
+- Django: another popular web application framework for Python
+- URL_for: a Flask method for creating URLs and links to URLs based on the application
+- Blueprints: a tool for breaking out portions of an application into smaller pieces and combining them to build a larger application
+- SQLAlchemy: a specific tool for Python to work with SQL databases
+- Authentication: setting up user login and storing passwords securely
+- Jinja templating: a templating language for Python used for creating HTML templates
+- Testing Flask: testing Flask applications using different libraries and tools
+- Cookies and sessions: a way to store data temporarily on the client-side or server-side
+- JSON API's and RESTful API's: two different ways of creating APIs to communicate with the server
+- Signals: a way of defining events that trigger certain actions in an application

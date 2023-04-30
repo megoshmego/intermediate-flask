@@ -14,17 +14,7 @@ Key Terms, Ideas, and Concepts:
 8. Session: A way to store user-specific data on the server-side during a user's interaction with a web application.
 9. Password hashing: A technique used to securely store user passwords in a database, making it difficult for attackers to retrieve the original password if the database is compromised.
 
-Definitions:
 
-1. Flask Bcrypt: A Flask extension that offers bcrypt hashing utilities to securely hash and check passwords in a Flask application.
-2. Hashing: A process that converts input data into a fixed-size, unreadable string of characters, typically used for securely storing passwords and verifying data integrity.
-3. Authentication: A process of verifying a user's identity by checking their provided credentials (username and password) against stored user data.
-4. User model: A data structure that represents a user in the application, containing fields such as ID, username, and hashed password.
-5. Protected route: A route in a Flask application that can only be accessed by authenticated users.
-6. Redirects: A technique used in web applications to change the user's current URL to another URL in response to specific actions or conditions.
-7. Class method: A method that is bound to the class itself, rather than an instance of the object, and typically used for operations that don't require a specific instance of the class.
-8. Session: A way to store user-specific data on the server-side during a user's interaction with a web application, allowing the application to remember the user's state across multiple requests.
-9. Password hashing: A technique used to securely store user passwords in a database by converting the plain text password into a fixed-size, unreadable string, making it difficult for attackers to retrieve the original password if the database is compromised.
 
 
 Certainly! Here's an example of a simple feedforward neural network using Python and the popular deep learning library TensorFlow (Keras). This example demonstrates how to create a neural network for digit recognition using the MNIST dataset.
